@@ -1,3 +1,4 @@
+//some of the original code that is used in the installer, this github links dont work anymore and the file location was setup specifically just for my computer
 private void button2_Click(object sender, EventArgs e)
         {
             //define string varaibles contaning download link to the AT and GR files
