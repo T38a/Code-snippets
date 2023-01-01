@@ -13,11 +13,12 @@ public partial class Form1 : Form
         {
             //variables
             string MSGToSend = textBox1.Text; //textbox varaiable
-            var channel = client.GetChannel(channelid) as ISocketMessageChannel; //find the channel to perform actions in
+            var channel = client.GetChannel(channel id) as ISocketMessageChannel; //find the channel to perform actions in
             string[] keywords = {"Mod", "mod", "mods","Mods"}; //keywords for validation
             bool containsKeyword = false; //bool to decide if if MSGToSend contains any Keywords
 
             //validation
+            Thread.Sleep(1000);
             foreach (string keyword in keywords)
             {
                 if (MSGToSend.Contains(keyword))
@@ -29,11 +30,14 @@ public partial class Form1 : Form
 
             if (containsKeyword)
             {
+                Thread.Sleep(1000);
                 await channel.SendMessageAsync(MSGToSend); //send MSGToSend to the discord channel
+                Console.WriteLine("Message sent to bot: " + MSGToSend);
             }
             else
             {
-                Console.WriteLine("Message did not contain keyword"); //write to console that no keyword was used
+                MessageBox.Show("Message did not contain keyword"); //write to console that no keyword was used
+                textBox1.Text = "";
             }
         }
     }
