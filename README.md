@@ -9,6 +9,7 @@ Process hacker: https://github.com/PKRoma/ProcessHacker
 
 Visual studio 2022: https://visualstudio.microsoft.com/vs/
 
+Visual studio code 2022: https://code.visualstudio.com/
 
 Most recent file being ColorChange.cpp
 Use however you want to, idc what you guys do with my code lol
